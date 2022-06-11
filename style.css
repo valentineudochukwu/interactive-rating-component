@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+}
+.hero{
+    background-color: hsl(213, 19%, 18%);
+    padding: 10px;
+    min-height: 300px;
+    border-radius: 15px;
+    padding: 20px;
+
+}
+.icon {
+    margin: 10px;
+    background-color: hsl(213, 19%, 17%);
+    border-radius:50px ;
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+}
+.icon img{
+    margin-top: 7px;
+    margin-left: 7px;
+    
+}
+.hero h2{
+    color:  hsl(0, 0%, 100%);
+    margin: 10px;
+}
+.hero p{
+    color: hsl(217, 12%, 63%) ;
+    font-size: 15px;
+    margin: 0px 0px 10px 10px;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.btn button{
+    margin: 10px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-radius: 50px;
+    color:  hsl(217, 12%, 63%);
+    background-color: hsl(213, 19%, 20%);
+    border: none;
+}
+.btn button:hover{
+    background-color: hsl(25, 97%, 53%) ;
+    cursor: pointer;
+}
+.hero a{
+    text-decoration: none;
+    color:hsl(217, 12%, 63%) ;
+    background-color:  hsl(25, 97%, 53%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:10px;
+    padding: 10px;
+    border-radius: 50px;
+}
+.hero a:hover{
+    color:  hsl(25, 97%, 53%);
+    background-color: hsl(0, 0%, 100%) ;
+    cursor: pointer;
+}
+.hero img{
+    position: relative;
+    margin-left: 28%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.hero-text h1{
+    color: hsl(0, 0%, 100%);
+    margin: 20px;
+    text-align: center;
+}
+.hero-text p{
+    display: flex;
+    text-align: center;
+}
+.hero button{
+    color:hsl(25, 97%, 53%); 
+    padding: 15px;
+    display: flex;
+    margin: auto;
+    border-radius: 50px;
+    background-color: hsl(213, 19%, 20%);
+    border: none;
+
+}
+
+
+
+/* ===media screen=== */
+
+
+@media only screen and (max-width: 700px){
+    .hero p{
+        font-size: 10px;
+    }
+    .hero{
+        width: 300px;
+    }
+    .btn button{
+        margin: 5px;
+        height: 40px;
+        
+    }
+    .hero img{
+        margin-left: 20%;
+    }
+}
