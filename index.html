@@ -1,37 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>vals | interactive rating component</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca:wght@400;700&family=Nunito+Sans:ital,wght@0,400;1,200;1,300&family=Outfit:wght@400;700&family=Overpass:wght@400;700&family=Poppins:wght@100;200;300;400;600;700&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca:wght@400;700&family=Nunito+Sans:ital,wght@0,400;1,200;1,300&family=Outfit:wght@400;700&family=Overpass:wght@400;700&family=Poppins:wght@100;200;300;400;600;700&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="hero" id="rating-container">
+      <div class="icon">
+        <img src="/assets/icon-star.svg" alt="" class="star" />
+      </div>
+      <h2>How did we do?</h2>
+      <p>
+        Please let us know how we did with your support<br />
+        request. All feedback is appreciated to help us<br />
+        improve our offering!
+      </p>
 
-    
-</head>
-<body>
-    <section class="hero">
-          <div class="icon">
-               <img src="/assets/icon-star.svg" alt="">
-          </div>
-                <h2>How did we do?</h2>
-                 <p>Please let us know how we did with your support<br> request. 
-                    All feedback is appreciated to help us<br> improve our offering!
-                 </p>
+      <div class="rating-btn">
+        <button class="inactive rating-element">1</button>
+        <button class="inactive rating-element">2</button>
+        <button class="inactive rating-element">3</button>
+        <button class="inactive rating-element">4</button>
+        <button class="inactive rating-element">5</button>
+      </div>
+      <div class="submit-container">
+        <button class="submit-btn">SUBMIT</button>
+      </div>
+    </section>
 
-                 <div class="btn">
-                     <button>1</button>
-                     <button>2</button>
-                     <button>3</button>
-                     <button>4</button>
-                     <button>5</button>
-                 </div>
-                 <a href="submit.html">SUBMIT</a>
+    <section class="hero submit-page" id="submit-page">
+      <img src="/assets/illustration-thank-you.svg" alt="" />
+     <!-- <div class="scs-mg"> -->
+      <b class="scs-text" id="msg"></b>
+     <!-- </div> -->
+      <div class="hero-text">
+        <h1>Thank you!</h1>
+        <p>
+          we appreciate you for taking the time to<br> give a
+          rating. if you ever need more support,<br> don't
+          hesitate to get in touch!
+        </p>
+      </div>
     </section>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
